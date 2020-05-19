@@ -1,5 +1,5 @@
 def current_player(board)
-  return turn_count(board) ? "X" : "O"
+  token =~ turn_count(board) ? "X" : "O"
 end
 
 
