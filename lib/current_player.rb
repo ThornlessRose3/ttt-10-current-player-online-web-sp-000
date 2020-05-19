@@ -1,7 +1,9 @@
 def current_player(board)
-  token""
-  token =~ turn_count(board) ? "X" : "O"
-  return token
+  if turn_count(board).even?
+    return "X"
+  else
+    return "O"
+  end
 end
 
 
